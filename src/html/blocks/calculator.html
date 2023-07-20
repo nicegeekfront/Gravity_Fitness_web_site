@@ -1,0 +1,90 @@
+<section class="calculator" id="calculator">
+    <div class="container">
+        <div class="calculator__wrapper">
+            <div class="calculator__table">
+                <h3 class="calculator__table-title">ТАБЛИЦА ИМТ</h3>
+                    <div class="calculator__table-row">
+                        <div class="calculator__table-bmi">ИМТ</div>
+                        <div class="calculator__table-status">ВАШ СТАТУС</div>
+                    </div>
+                    <div class="calculator__table-row">
+                        <div class="calculator__table-info">До 18.5</div>
+                        <div class="calculator__table-info">
+                            Недовес</div>
+                    </div>
+                    <div class="calculator__table-row">
+                        <div class="calculator__table-info">18.5 - 24.9</div>
+                        <div class="calculator__table-info">Норма</div>
+                    </div>
+                    <div class="calculator__table-row">
+                        <div class="calculator__table-info">25.0 - 29.9</div>
+                        <div class="calculator__table-info">
+                            Перевес</div>
+                    </div>
+                    <div class="calculator__table-row">
+                        <div class="calculator__table-info">30.0 - и более</div>
+                        <div class="calculator__table-info">Ожирение</div>
+                    </div>
+                <div class="calculator__table-description">
+                    <div class="calculator__table-icon">
+                        <img src="./img/calculator/shield.svg" alt="calculator_icon_1">
+                    </div>
+                    <p class="calculator__table-name"><span>* ИМТ</span> Индекс Массы Тела</p>
+                </div>
+            </div>
+            <div class="calculator__form-wrapper">
+                <h3 class="calculator__table-title">ПОСЧИТАЙТЕ СВОЙ ИМТ</h3>
+                <form class="calculator__form">
+                    <div class="calculator__form-row">
+                        <div class="calculator__form-group">
+                            <label for="YourHeight">Рост(в см) :*</label>
+                            <input class="calculator__form-input" type="text" name="bmiheight" id="YourHeight" placeholder="сантиметры" required>
+                            <img class="form__icons" src="./img/calculator/height.svg" alt="calculator_icon_2">
+                        </div>
+                        <div class="calculator__form-group">
+                            <label for="YourWeight">Вес(в кг) :*</label>
+                            <input class="calculator__form-input" type="text" name="bmiweight" id="YourWeight" placeholder="килограммы" required>
+                            <img class="form__icons" src="./img/calculator/weight.svg" alt="calculator_icon_3">
+                        </div>
+                    </div>
+                    <div class="calculator__form-row">
+                        <div class="calculator__form-group">
+                            <label for="YourAge">Возраст :*</label>
+                            <input class="calculator__form-input" type="text" name="bmiage" id="YourAge" placeholder="возраст" required>
+                            <i class="fa-solid fa-calendar form__icons"></i>
+                        </div>
+                        <div class="calculator__form-group">
+                            <label for="SelectGender">Пол :*</label>
+                            <select class="calculator__form-select" name="bmigender" id="SelectGender" name="bmigender" required>
+                                <option value="">Выберите</option>
+                                <option value="Male">Мужчина</option>
+                                <option value="Female">Женщина</option>
+                            </select>
+                            <img class="form__icons form__icons" src="./img/calculator/gender.svg" alt="calculator_icon_4">
+                        </div>
+                    </div>
+                    <div class="calculator__form-row">
+                        <div class="calculator__form-group">
+                            <label for="SelectActivity">Выберете вашу активность :*</label>
+                            <select class="calculator__form-select" name="bmiactivity" id="SelectActivity" name="bmiactivity" required>
+                                <option value="">Активность</option>
+                                <option value="Activity 1">Ходьба</option>
+                                <option value="Activity 2">Бег</option>
+                                <option value="Activity 3">Фитнес</option>
+                                <option value="Activity 4">Бокс</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down form__icons" id="chevron"></i>
+                        </div>
+                    </div>
+                </form>
+                <div class="calculator__result">
+                    <button class="form__btn">
+                        ПОСЧИТАТЬ
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <p class="form__result">ИМТ: <span id="result">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

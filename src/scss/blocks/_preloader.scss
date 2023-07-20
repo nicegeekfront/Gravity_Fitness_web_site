@@ -1,0 +1,62 @@
+@import './../base/vars';
+
+.preloader {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: block;
+    &__wrapper {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: calc(50% - 30px);
+        left: calc(50% - 20px);
+    }
+    &__one {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $colormain;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: scale-down-center 2s ease-in-out infinite;
+    }
+    &__two {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $colormain;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation-delay: -1s;
+        animation: scale-down-center 1s ease-in-out infinite;
+    }
+}
+
+.loader__hiding {
+        transition: 0.3s opacity;
+        opacity: 0;
+}
+.loaded .preloader {
+        display: none;
+}
+
+@keyframes scale-down-center {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+      }
+  }

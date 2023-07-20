@@ -1,0 +1,101 @@
+@import './../base/vars';
+.programs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &__item-text {
+        background-color: #29282d;
+        padding: 90px 45px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        &::after {
+            content: "";
+            bottom: 75px;
+            right: -25px;
+            height: 3px;
+            width: 50px;
+            background-color: $colormain;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    &__item-foto {
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-position: right;
+        }
+    }
+    &__item-text--main {
+        background-color: $colormain;
+        padding: 90px 45px;
+        &::after {
+            content: "";
+            bottom: 75px;
+            right: -25px;
+            height: 3px;
+            width: 50px;
+            background-color: #29282d;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    &__item-subtitle {
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'Roboto Condensed', sans-serif;;
+        color: $colorwhite;
+        padding-bottom: 10px;
+    }
+    &__item-subtitle--main {
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'Roboto Condensed', sans-serif;;
+        color: $colormain;
+    }
+    &__item-title {
+        font-size: 48px;
+        color: $colorwhite;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    &__item-info {
+        font-size: 20px;
+        margin: 16px 0px 20px 0px;
+        color: $colorwhite;
+        max-width: 300px;
+    }
+    &__item-btn {
+        font-size: 20px;
+        color: $colorwhite;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
+        i {
+            margin-left: 5px;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+//Media Queries 
+
+@media (max-width: 1300px) {
+    .programs {
+        grid-template-columns: repeat(2, 1fr);
+        &__item-text::after {
+            right: 0;
+        }
+    }
+    
+}
+@media (max-width: 700px) {
+    .programs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

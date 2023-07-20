@@ -1,0 +1,42 @@
+/* Base */
+@import "./base/reset";
+@import './base/vars';
+@import "./base/sticky-footer";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: $colorwhite;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+	max-width: 1160px;
+	padding: 0 15px;
+}
+
+.container__right {
+    overflow-x: hidden;
+    padding-left: calc((100% - 1160px) / 2 + 30px);
+}
+
+.no--scroll {
+    overflow: hidden!important;
+    padding-right: 17px;
+}
+.show {
+    display: flex;
+}

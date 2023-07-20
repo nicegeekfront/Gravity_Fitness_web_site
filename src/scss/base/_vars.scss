@@ -1,0 +1,59 @@
+/* Colors */
+$colormain: #e12727;
+$coloraccent: #29282d;
+$colorwhite: #fff;
+$colorgray: #0b1832;
+
+/* Mixins */
+
+@mixin h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 110px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 0.9;
+    padding: 10px 0px;
+}
+
+@mixin h2 {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 85px;
+    font-weight: 600;
+    line-height: 85px;
+    color: #212529;
+}
+
+@mixin h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@mixin section-subtitle-one {
+    font-family:'Jost', sans-serif;
+    font-size: 30px;
+    color: #464646;
+}
+
+@mixin section-subtitle-two {
+    font-family:'Jost', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    letter-spacing: 3px;
+    line-height: 36px;
+}
+
+@mixin section-title {
+    font-family:'Jost', sans-serif;
+    font-size: 60px;
+    line-height: 85px;
+    color: #212529;
+}
+
+
+
+
+    
+    

@@ -1,0 +1,73 @@
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__title-row">
+            <h3 class="contacts__title">КОНТАКТЫ</h3>
+            <p class="contacts__subtitle">ВСЕГДА НА СВЯЗИ</p>
+        </div>
+    <div class="contacts__row">
+        <div class="contacts__item">
+            <a class="contacts__item-link" href="tel:+78124298221"></a>
+            <div class="contacts__item-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contacts__item-info">
+                <p class="contacts__item-title">Телефон</p>
+                <p class="contacts__item-text">+7 (812) 429-82-21</p>
+                <p class="contacts__item-text">+7 (812) 429-81-22</p>
+            </div>
+        </div>
+        <div class="contacts__item">
+            <a class="contacts__item-link" href="mailto:info@gravsport.ru"></a>
+            <div class="contacts__item-icon">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+            </div>
+            <div class="contacts__item-info">
+                <p class="contacts__item-title">Почта</p>
+                <p class="contacts__item-text">info@gravsport.ru</p>
+                <p class="contacts__item-text">service@gravsport.ru</p>
+            </div>
+        </div>
+        <div class="contacts__item">
+            <a class="contacts__item-link" href="https://yandex.ru/maps/-/CPapFuR"></a>
+            <div class="contacts__item-icon">
+                <i class="fa-solid fa-map-location"></i>
+            </div>
+            <div class="contacts__item-info">
+                <p class="contacts__item-title">Адрес</p>
+                <p class="contacts__item-text">СПБ, ул. Сантьяго-Де-Куба, дом 6, корпус 4</p>
+            </div>
+        </div>
+    </div>
+    <div class="contacts__label">
+        <p class="contacts__label-text">Пришлите нам заявку и мы проконсультируем по всем возможным абонементам и типам тренировок.</p>
+            <i class="fa-solid fa-envelope-open-text"></i>
+    </div>
+    <form class="contacts__form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="gravity_nice_geek">
+        <input type="hidden" name="admin_email" value="info@nicegeek.ru">
+        <input type="hidden" name="form_subject" value="contacts">
+        <div class="contacts__form-group">
+            <div class="contacts__form-group-left">
+                <label class="contacts__form-label" for="firstname">Имя : *</label>
+                <i class="fa-solid fa-user"></i>
+                <input class="contacts__form-input" type="text" id="firstname" name="firstname" placeholder="Введите имя">
+            </div>
+            <div class="contacts__form-group-right">
+                <label class="contacts__form-label" for="phone">Телефон : *</label>
+                <i class="fa-solid fa-phone"></i>
+                <input class="contacts__form-input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+            </div>
+        </div>
+        <div class="contacts__form-group-textarea">
+            <label class="contacts__form-label" for="message">Сообщение : *</label>
+            <i class="fa-solid fa-comment"></i>
+            <textarea class="contacts__form-input" id="message" name="message" cols="10" rows="5" placeholder="Введите сообщение"></textarea>
+        </div>
+        <button class="contacts__form-btn">
+          ОТПРАВИТЬ
+          <i class="fa-solid fa-arrow-right"></i> 
+        </button>
+    </form>
+</div>
+</section>
